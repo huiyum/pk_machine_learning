@@ -142,16 +142,16 @@ models = {
 }
 
 param_grids = {
-    "Nearest_Neighbors": {"n_neighbors": [5, 10, 20], "weights": ['uniform', 'distance']},
-    "Linear_SVM": {"C": [0.01, 0.1, 1, 10]},
-    "Decision_Tree": {"max_depth": [3, 5, 10]},
-    "Gradient_Boosting": {"n_estimators": [50, 100], "learning_rate": [0.05, 0.1]},
-    "Extra_Trees": {"n_estimators": [50, 100], "min_samples_split": [2, 5]},
-    "Random_Forest": {"n_estimators": [50, 100], "max_depth": [5, 10]},
-    "AdaBoost": {"n_estimators": [50, 100], "learning_rate": [0.05, 0.1]},
-    "XGB": {"n_estimators": [50, 100], "learning_rate": [0.05, 0.1], "subsample": [0.8, 1.0]},
-    "Lasso": {"alpha": [0.01, 0.1, 1]},
-    "Ridge": {"alpha": [0.01, 0.1, 1]},
+    "Nearest_Neighbors": {"n_neighbors": [5, 10, 20, 50, 100], "weights": ['uniform', 'distance']},
+    "Linear_SVM": {"C": [0.01, 0.1, 1, 10], "kernel": ['linear']},
+    "Decision_Tree": {"max_depth": [3, 5, 10, 15]},
+    "Gradient_Boosting": {"n_estimators": [20, 50, 100, 150, 200], "learning_rate": [0.01, 0.05, 0.1, 0.2]},
+    "Extra_Trees": {"n_estimators": [20, 50, 100, 150, 200], "min_samples_split": [2, 5, 10]},
+    "Random_Forest": {"n_estimators": [20, 50, 100, 150, 200], "max_depth": [3, 5, 10, 15]},
+    "AdaBoost": {"n_estimators": [20, 50, 100, 150, 200], "learning_rate": [0.01, 0.05, 0.1, 0.2]},
+    "XGB": {"n_estimators": [20, 50, 100, 150, 200], "learning_rate": [0.01, 0.05, 0.1, 0.2], "subsample": [0.5, 0.8, 1.0]},
+    "Lasso": {"alpha": [0.01, 0.05, 0.1, 0.5, 1]},
+    "Ridge": {"alpha": [0.01, 0.1, 1, 10]},
     "Linear_Regression": {}
 }
 
